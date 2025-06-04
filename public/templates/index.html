@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API NOTAS</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+  <header>
+    <h1 class="titulo">API REST NFs</h1>
+  </header>
+  
+
+  <div class="container">
+  
+    <div class="EnvioNota">
+      <h2 id="txtEnvio">Envio de Nota</h2>
+      <input type="file" id="fileInput" multiple style="display: none;" onchange="mostrarNomeArquivo()">
+      <button onclick="document.getElementById('fileInput').click()">Selecionar Arquivo</button>
+      <span id="fileName" class="file-name">Nenhum arquivo selecionado</span>
+      <button onclick="enviarNota()">Enviar Nota</button>
+  </div>
+  
+  <div class="InfosNota">
+    <h2>Informações da Nota</h2>
+  </div>  
+  
+</div>
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

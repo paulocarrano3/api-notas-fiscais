@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Corpo */
+body {
+  background-color: #101322;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+header {
+  width: 100%;
+  background-color: #101322;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 100px;
+  background: #1d1f2b;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+.InfosNota {
+  background-color: #292b3a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: hidden; 
+  transition: all 0.3s ease-in-out; 
+}
+
+.EnvioNota {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+  background-color: #292b3a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+#txtEnvio {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.EnvioNota button {
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
